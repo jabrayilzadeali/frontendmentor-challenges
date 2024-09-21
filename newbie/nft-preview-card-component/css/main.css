@@ -1,0 +1,130 @@
+:root {
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--very-dark-blue-main-bg: hsl(217, 54%, 11%);
+--very-dark-blue-card-bg: hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%)
+}
+
+body {
+	background-color: var(--very-dark-blue-main-bg);
+	font-family: 'Outfit', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+h1 {
+	color: var(--white);
+}
+
+h1:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+
+p {
+	font-size: 18px;
+}
+
+
+hr {
+	border: .1px solid var(--very-dark-blue-line);
+}
+
+.container {
+	width: 310px;
+	padding: 30px;
+	border-radius: 20px;
+	background-color: var(--very-dark-blue-card-bg);
+	color: var(--white);
+	color: var(--soft-blue);
+}
+
+.image-container {
+	position: relative;
+
+}
+
+.equilibrium {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+	background: none;
+}
+
+.middle {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.image-container:hover {
+	background-color: var(--cyan);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.image-container:hover .equilibrium {
+	opacity: .5;
+}
+
+.image-container:hover .middle {
+	opacity: 1;
+}
+
+.info {
+	padding: 0px;
+	margin: 0px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left,
+.right {
+	display: flex;
+	align-items: center;
+} 
+
+.left p {
+	color: var(--cyan);
+}
+
+.left svg {
+	padding-right: 5px;
+}
+
+.right svg {
+	padding-right: 5px;
+}
+
+.row.bottom {
+	justify-content: start;
+	align-items: center;
+}
+
+.avatar {
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	object-fit: cover;
+	width: 13%;
+	margin-right: 20px;
+	height: auto;
+}
+
+.row span {
+	color: var(--white);
+}
+
+.row span:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}

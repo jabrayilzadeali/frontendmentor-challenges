@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+}
+
+
+:root {
+	--Pale-blue: hsl(225, 100%, 94%);
+	--Bright-blue: hsl(245, 75%, 52%);
+
+
+	--Very-pale-blue: hsl(225, 100%, 98%);
+	--Desaturated-blue: hsl(224, 23%, 55%);
+	--Dark-blue: hsl(223, 47%, 23%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	background-image: url(../images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: var(--Pale-blue);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	height: 98vh;
+}
+
+h2 {
+	padding: 0;
+	margin-top: 1.3rem;
+	margin-bottom: 0.9rem;
+	color: var(--Dark-blue)
+}
+
+img {
+	width: 100%;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+p {
+	font-size: 16px;
+}
+
+.container {
+	width: 355px;
+	border-radius: 1rem;
+	background-color: var(--white);
+}
+
+/* .image ~ div {
+	padding: 0 1rem;
+} */
+
+.info {
+	color: var(--Desaturated-blue);
+	margin: 0 2.5rem;
+}
+
+.flex {
+	display: flex;
+	margin: 1.8rem 1.8rem;
+	padding: 1rem 0;
+	border-radius: .5rem;
+	background-color: var(--Very-pale-blue);
+	justify-content: space-around;
+	align-items: center;
+}
+
+circle {
+	fill: var(--Pale-blue);
+}
+
+.price {
+	padding-right: 2rem;
+}
+
+.price .plan {
+	font-weight: bold;
+	color: var(--Dark-blue);
+}
+
+.price .year {
+	color: var(--Desaturated-blue)
+}
+
+.change a{
+	color: var(--Bright-blue);
+	font-weight: bold;
+}
+
+.change a:hover {
+	text-decoration: none;
+	color: hsl(245, 83%, 68%);
+}
+
+.main-text h1{
+	font-weight: bold;
+}
+
+.payment {
+	background-color: var(--Bright-blue);
+	color: var(--white);
+	font-weight: bold;
+	padding: 1rem;
+	margin: 0 1.8rem;
+	border-radius: .8rem;
+	box-shadow: 0 2rem 1.2rem -.4rem hsl(243, 82%, 91%);
+}
+
+.payment:hover {
+	background-color: hsl(245, 83%, 68%);
+	cursor: pointer;
+}
+
+.cancel {
+	padding: 1.9rem;
+	font-weight: bold;
+	color: var(--Desaturated-blue)
+}
+
+.cancel:hover {
+	color: black;
+	cursor: pointer;
+}
+
+/* At the top level of your code */
+@media screen and (min-width: 500px) {
+	body {
+		background-image: url(../images/pattern-background-desktop.svg);
+	}
+
+	.container {
+		width: 400px;
+	}
+
+	.flex {
+		margin: 1.8rem 2.4rem;
+	}
+
+	.payment {
+		margin: 0 2.4rem;
+	}
+  }
